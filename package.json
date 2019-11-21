@@ -27,7 +27,7 @@
     "file-loader": "^4.2.0",
     "mocha": "^6.0.0",
     "nyc": "^14.0.0",
-    "prettier": "^1.14.3",
+    "prettier": "~1.19.1",
     "style-loader": "^1.0.0",
     "unexpected": "^11.0.0",
     "unexpected-assetgraph": "^1.1.0",
