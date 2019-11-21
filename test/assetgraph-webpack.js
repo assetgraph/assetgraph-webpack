@@ -219,10 +219,9 @@ describe('assetgraph-webpack', function() {
 
     // Webpack 1: 1.bundle.js
     // Webpack 2: 0.bundle.js
-    expect(assetGraph, 'to contain asset', { fileName: 'bundle.js' }).and(
-      'to contain asset',
-      { fileName: { $regex: /^[01]\.bundle\.js$/ } }
-    );
+    expect(assetGraph, 'to contain asset', {
+      fileName: 'bundle.js'
+    }).and('to contain asset', { fileName: { $regex: /^[01]\.bundle\.js$/ } });
     expect(assetGraph, 'to contain relation', {
       from: { fileName: 'index.html' },
       to: { fileName: 'bundle.js' }
